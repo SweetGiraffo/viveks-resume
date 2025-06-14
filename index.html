@@ -6,611 +6,420 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <!-- 
-    - primary meta tags
-  -->
-  <title>Vivek Chauhan - Web & App Developer</title>
-  <meta name="title" content="Vivek Chauhan - Web & App Developer">
-  <meta name="description" content="This is a personal portfolio of Vivek Chauhan">
+  <title>Vivek Chauhan - M.Tech IIT Kharagpur</title>
+  <meta name="title" content="Vivek Chauhan - M.Tech IIT Kharagpur">
+  <meta name="description" content="Welcome to the personal portfolio of Vivek Chauhan, an M.Tech student at IIT Kharagpur specializing in Machine Learning, Computer Vision, and Embedded Systems.">
 
-  <!-- 
-    - favicon
-  -->
   <link rel="shortcut icon" href="./favicon.svg" type="image/svg+xml">
 
-  <!-- 
-    - google font link
-  -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&family=Montserrat:wght@700&display=swap" rel="stylesheet">
 
-  <!-- 
-    - custom css link
-  -->
   <link rel="stylesheet" href="./assets/css/style.css">
 
-  <!-- 
-    - preload images
-  -->
-  <link rel="preload" as="image" href="./assets/images/hero-banner.jpg">
+  <link rel="preload" as="image" href="./assets/images/hero-banner.png">
 
 </head>
 
 <body>
-
-  <!-- 
-    - #PRELOADER
-  -->
+  <canvas id="background-canvas"></canvas>
 
   <div class="preloader" data-preloader>
-    <div class="circle"></div>
+    <div class="spinner"></div>
   </div>
-
-
-
-
-
-  <!-- 
-    - #HEADER
-  -->
-
-  <header class="header" data-header>
-    <div class="container">
-
-      <a href="#" class="logo">
-        <img src="./assets/images/logo.svg" width="170" height="40" alt="Pfolio home">
-      </a>
-
-      <button class="nav-toggle-btn" data-nav-toggler data-nav-toggle-btn aria-label="Toggle menu">
-        <span class="line line-1"></span>
-        <span class="line line-2"></span>
-      </button>
-
-      <nav class="navbar" data-navbar>
-        <ul class="navbar-list">
-
-          <li>
-            <a href="#" class="navbar-link">Home</a>
-          </li>
-
-          <li>
-            <a href="#" class="navbar-link">Resume</a>
-          </li>
-
-          <li>
-            <a href="#" class="navbar-link">Services</a>
-          </li>
-
-          <li>
-            <a href="#" class="navbar-link">Portfolio</a>
-          </li>
-
-          <li>
-            <a href="#" class="navbar-link">Blog</a>
-          </li>
-
-          <li>
-            <a href="#" class="navbar-link">Contact</a>
-          </li>
-
-        </ul>
-      </nav>
-
-      <div class="overlay" data-nav-toggler data-overlay></div>
-
-    </div>
-  </header>
-
-
-
-
 
   <main>
     <article>
 
-      <!-- 
-        - #HERO
-      -->
-
-      <section class="section hero" aria-label="home">
+      <section class="section hero" id="home" aria-label="Home">
         <div class="container">
-
           <div class="hero-content">
-
-            <h1 class="h1 hero-title">Vivek Chauhan</h1>
-
-            <p class="hero-subtitle">
-              Creative Web & App Developer
-            </p>
-
-            <div class="hero-banner">
-              <img src="./assets/images/hero-banner.jpg" width="800" height="800" alt="kane williams" class="w-100">
-            </div>
-
-            <p class="section-text">
-              
-              Hello, this is Vivek Chauhan. While I'm currently pursuing B.Tech in Electronics and Communication Engineering, my passion lies in the realm of software and web development.
-            </p>
-
-            <a href="https://drive.google.com/drive/folders/1B4x1jkjpTHvCaAGfbloOxOsa4VJVLdTV" class="btn has-before">
-              <span class="span">Download CV</span>
-
-              <ion-icon name="download-outline" aria-hidden="true"></ion-icon>
-            </a>
-
+              <h1 class="hero-title">Vivek Chauhan <span class="hero-subtitle-span">Tech Enthusiast – ML | CV | Embedded</span></h1>
+              <p class="hero-text">
+                Hello! I'm Vivek Chauhan, an M.Tech student in Electronics and Communication Engineering at IIT Kharagpur, with a profound passion for crafting impactful software and web solutions. I thrive on bringing ideas to life through code.
+              </p>
+              <div class="hero-btn-group">
+                <a href="https://drive.google.com/drive/folders/1B4x1jkjpTHvCaAGfbloOxOsa4VJVLdTV" class="btn primary-btn" target="_blank" rel="noopener noreferrer">
+                    Download CV
+                </a>
+                <a href="#contact" class="btn secondary-btn">
+                    Get in Touch
+                </a>
+              </div>
           </div>
-
+          <div class="hero-image-wrapper" data-hero-banner>
+            <img src="./assets/images/hero-banner.png" width="800" height="800" alt="Vivek Chauhan" class="img-cover">
+          </div>
         </div>
       </section>
 
-
-
-
-
-      <!-- 
-        - #SERVICE
-      -->
-
-      <section class="service" aria-labelledby="service-label">
+      <section class="section languages" id="languages" aria-label="Languages">
         <div class="container">
-
-          <div class="title-wrapper">
-
-            <div>
-              <p class="section-subtitle">
-                Languages that I have learned
-              </p>
-
-              <h2 class="h2 section-title" id="service-label">Languages</h2>
-            </div>
-
-            <p class="section-text">
-              I have a strong foundation in computer science fundamentals, including operating systems and object-oriented programming, which strengthens my problem-solving capabilities. My aptitude for data structures and algorithms allows me to develop effective solutions for complex problems.
-            </p>
-
-          </div>
-
-          <div class="slider" data-slider>
-
-            <ul class="slider-container service-list" data-slider-container>
-
-              <li class="slider-item" data-slider-item>
-                <div class="service-card">
-
-                  <div class="card-icon">
-                    <ion-icon name="desktop-outline"></ion-icon>
-                  </div>
-
-                  <h3 class="h3 card-title">CPP</h3>
-
-                  <p class="card-text">
-                    I primarily used C++ as my programming language while learning Data Structures and Algorithms (DSA).
-                  </p>
-
-                  <span class="text-lg card-number">01</span>
-
-                </div>
-              </li>
-
-              <li class="slider-item" data-slider-item>
-                <div class="service-card">
-
-                  <div class="card-icon">
-                    <ion-icon name="podium-outline"></ion-icon>
-                  </div>
-
-                  <h3 class="h3 card-title">C</h3>
-
-                  <p class="card-text">
-                    I began my programming journey with C, laying the foundation for my exploration and growth in the world of coding. As I delved into C, I gained a solid understanding of programming concepts that later facilitated my transition to other languages and more complex challenges.
-                  </p>
-
-                  <span class="text-lg card-number">02</span>
-
-
-                </div>
-              </li>
-
-              <li class="slider-item" data-slider-item>
-                <div class="service-card">
-
-                  <div class="card-icon">
-                    <ion-icon name="basket-outline"></ion-icon>
-                  </div>
-
-                  <h3 class="h3 card-title">Python</h3>
-
-                  <p class="card-text">
-                    
-I learned Python to create projects that helped me apply theoretical concepts in practical scenarios. Python's versatility and user-friendly syntax allowed me to develop a range of projects, from web applications to data analysis tools. Through this process, I honed my coding skills and gained valuable hands-on experience in software development.
-                  </p>
-
-                  <span class="text-lg card-number">03</span>
-
-
-                </div>
-              </li>
-
-              <li class="slider-item" data-slider-item>
-                <div class="service-card">
-
-                  <div class="card-icon">
-                    <ion-icon name="color-filter-outline"></ion-icon>
-                  </div>
-
-                  <h3 class="h3 card-title">JavaScript</h3>
-
-                  <p class="card-text">
-                    I acquired proficiency in JavaScript to undertake project development, enabling me to translate theoretical knowledge into tangible applications. JavaScript's wide range of applications, particularly in web development, empowered me to craft interactive and dynamic projects that showcased my programming abilities.
-                  </p>
-
-                  <span class="text-lg card-number">04</span>
-
-                  <a href="#" class="layer-link" aria-label="More about my Graphic Design service"></a>
-
-                </div>
-              </li>
-
-            </ul>
-
-            <div class="slider-controls">
-              <button class="slider-control prev" data-slider-prev aria-label="Slide to previous item">
-                <div class="line"></div>
-                <div class="arrow"></div>
-              </button>
-
-              <button class="slider-control next" data-slider-next aria-label="Slide to next item">
-                <div class="line"></div>
-                <div class="arrow"></div>
-              </button>
-            </div>
-
-          </div>
-
-        </div>
-      </section>
-
-
-
-
-
-      <!-- 
-        - #SKILLS
-      -->
-
-      <section class="section skills" aria-label="our skills">
-        <div class="container">
-
-          <p class="section-subtitle">I mold the future by programming</p>
-
-          <h2 class="h2 section-title">Skill's</h2>
-
-          <div class="skills-wrapper">
-
-            <div>
-              <p class="section-text">
-                Throughout my B.Tech journey, I actively engaged in a multitude of developmental endeavors that have significantly contributed to my growth and skill set.
-              </p>
-
-              <p class="section-text">
-                The academic years were marked by a series of meaningful projects, each designed to foster a deeper understanding of the subjects and concepts within the realm of Electronics and Communication Engineering. These projects not only tested my theoretical knowledge but also encouraged me to apply creative problem-solving and critical thinking to real-world challenges.
-              </p>
-
-              <a href="#" class="btn has-before">vivekchauhan73026@gmail.com</a>
-            </div>
-
-            <div>
-
-              <ul class="skills-list">
-
-                <li>
-                  <div class="progress-wrapper">
-                    <p class="progress-label">Data Structures and Algorithms</p>
-
-                    <data class="progress-value" value="90">90%</data>
-                  </div>
-
-                  <div class="progress-bg">
-                    <div class="progress" style="width: 90%;"></div>
-                  </div>
-                </li>
-
-                <li>
-                  <div class="progress-wrapper">
-                    <p class="progress-label">Soft skills</p>
-
-                    <data class="progress-value" value="80">80%</data>
-                  </div>
-
-                  <div class="progress-bg">
-                    <div class="progress" style="width: 80%;"></div>
-                  </div>
-                </li>
-
-                <li>
-                  <div class="progress-wrapper">
-                    <p class="progress-label">Web Design</p>
-
-                    <data class="progress-value" value="95">95%</data>
-                  </div>
-
-                  <div class="progress-bg">
-                    <div class="progress" style="width: 95%;"></div>
-                  </div>
-                </li>
-
-                <li>
-                  <div class="progress-wrapper">
-                    <p class="progress-label">CPP</p>
-
-                    <data class="progress-value" value="85">85%</data>
-                  </div>
-
-                  <div class="progress-bg">
-                    <div class="progress" style="width: 85%;"></div>
-                  </div>
-                </li>
-
-              </ul>
-
-            </div>
-
-          </div>
-
-        </div>
-      </section>
-
-
-
-
-
-      <!-- 
-        - #PORTFOLIO
-      -->
-
-      <section class="portfolio" aria-labelledby="portfolio-label">
-
-        <div class="title-wrapper container">
-
-          <div>
-            <p class="section-subtitle" id="portfolio-label">My Works</p>
-
-            <h2 class="h2 section-title">Portfolio</h2>
-          </div>
-
-          <p class="section-text">
-            
-Throughout my journey, my focus predominantly gravitated towards the creation of both web-based and desktop projects. The challenge of seamlessly blending aesthetics with functionality to craft user-friendly interfaces captured my imagination and drove my projects in these directions. The dynamic nature of web development and the intricate nuances of desktop applications presented a unique opportunity for me to explore and innovate.
+          <h2 class="section-title text-center">My Core Strengths & Languages</h2>
+          <p class="section-description text-center">
+            My journey began with a solid foundation in computer science fundamentals, including operating systems and object-oriented programming, which significantly enhances my problem-solving abilities. I leverage robust data structures and algorithms, along with strong analytical skills, to design efficient and scalable software solutions.
           </p>
 
-        </div>
-
-        <div class="slider" data-slider>
-
-          <ul class="slider-container" data-slider-container>
-
-            <li class="slider-item">
-              <div class="portfolio-card img-holder" style="--width: 600; --height: 600;">
-
-                <img src="./assets/images/portfolio-1.jpg" width="600" height="600" loading="lazy" alt="portfolio"
-                  class="img-cover">
-
-                <div class="card-content">
-                  <h3 class="h3 card-title">Typemaster</h3>
-
-                  <p class="card-text">Website Design</p>
-                </div>
-
-                <a href="https://type-master-by-vivek.netlify.app/" class="layer-link"></a>
-
-              </div>
-            </li>
-
-            <li class="slider-item">
-              <div class="portfolio-card img-holder" style="--width: 600; --height: 600;">
-
-                <img src="./assets/images/portfolio-2.jpg" width="600" height="600" loading="lazy" alt="portfolio"
-                  class="img-cover">
-
-                <div class="card-content">
-                  <h3 class="h3 card-title">Weather Wise</h3>
-
-                  <p class="card-text">Website / Development</p>
-                </div>
-
-                <a href="https://weatherwise-by-vivek.netlify.app/" class="layer-link"></a>
-
-              </div>
-            </li>
-
-            <li class="slider-item">
-              <div class="portfolio-card img-holder" style="--width: 600; --height: 600;">
-
-                <img src="./assets/images/portfolio-3.jpg" width="600" height="600" loading="lazy" alt="portfolio"
-                  class="img-cover">
-
-                <div class="card-content">
-                  <h3 class="h3 card-title">Gender Guess</h3>
-
-                  <p class="card-text">UX Design / Web App</p>
-                </div>
-
-                <a href="https://genderguess-by-vivek.netlify.app/" class="layer-link"></a>
-
-              </div>
-            </li>
-
-
-
-          <div class="slider-controls">
-            <button class="slider-control prev" data-slider-prev aria-label="Slide to previous item">
-              <div class="line"></div>
-              <div class="arrow"></div>
-            </button>
-
-            <button class="slider-control next" data-slider-next aria-label="Slide to next item">
-              <div class="line"></div>
-              <div class="arrow"></div>
-            </button>
+          <div class="languages-list">
+            <div class="language-card">
+              <ion-icon name="logo-html5" class="language-icon"></ion-icon>
+              <h3 class="language-name">HTML5</h3>
+              <p class="language-level">Proficient</p>
+            </div>
+            <div class="language-card">
+              <ion-icon name="logo-css3" class="language-icon"></ion-icon>
+              <h3 class="language-name">CSS3</h3>
+              <p class="language-level">Proficient</p>
+            </div>
+            <div class="language-card">
+              <ion-icon name="logo-javascript" class="language-icon"></ion-icon>
+              <h3 class="language-name">JavaScript</h3>
+              <p class="language-level">Proficient</p>
+            </div>
+            <div class="language-card">
+              <ion-icon name="logo-python" class="language-icon"></ion-icon>
+              <h3 class="language-name">Python</h3>
+              <p class="language-level">Proficient</p>
+            </div>
+            <div class="language-card">
+              <ion-icon name="logo-electron" class="language-icon"></ion-icon> <!-- Using Electron icon as a generic C++ placeholder -->
+              <h3 class="language-name">C++</h3>
+              <p class="language-level">Proficient</p>
+            </div>
+             <div class="language-card">
+              <ion-icon name="code-slash-outline" class="language-icon"></ion-icon> <!-- Generic code icon for C -->
+              <h3 class="language-name">C</h3>
+              <p class="language-level">Proficient</p>
+            </div>
           </div>
-
         </div>
-
       </section>
 
-
-
-
-
-      <!-- 
-        - #BLOG
-      -->
-
-      <section class="section blog" aria-labelledby="blog-label">
+      <section class="section skills" id="skills" aria-label="Skills">
         <div class="container">
+          <h2 class="section-title text-center">My Skills & Expertise</h2>
+          <p class="section-description text-center">
+            Beyond specific programming languages, I possess a versatile skill set that allows me to tackle diverse development challenges and contribute effectively to projects.
+          </p>
 
-          <p class="section-subtitle" id="blog-label">Volunteer Experience</p>
+          <div class="skills-list">
+            <div class="skill-item">
+              <ion-icon name="hardware-chip-outline" class="skill-icon"></ion-icon>
+              <h3 class="skill-name">Embedded Systems</h3>
+              <p class="skill-description">Designing and developing software for embedded applications, ensuring efficient interaction with hardware components.</p>
+            </div>
+            <div class="skill-item">
+              <ion-icon name="analytics-outline" class="skill-icon"></ion-icon>
+              <h3 class="skill-name">Machine Learning</h3>
+              <p class="skill-description">Building predictive models and algorithms for various data-driven applications.</p>
+            </div>
+            <div class="skill-item">
+              <ion-icon name="bulb-outline" class="skill-icon"></ion-icon>
+              <h3 class="skill-name">Deep Learning</h3>
+              <p class="skill-description">Expertise in neural networks and deep learning frameworks for complex problem-solving.</p>
+            </div>
+            <div class="skill-item">
+              <ion-icon name="eye-outline" class="skill-icon"></ion-icon>
+              <h3 class="skill-name">Computer Vision</h3>
+              <p class="skill-description">Developing solutions for image and video analysis, including object detection and recognition.</p>
+            </div>
+            <div class="skill-item">
+              <ion-icon name="git-branch-outline" class="skill-icon"></ion-icon>
+              <h3 class="skill-name">Data Structures & Algorithms</h3>
+              <p class="skill-description">Strong understanding and application of efficient data structures and algorithms for optimized solutions.</p>
+            </div>
+            <div class="skill-item">
+              <ion-icon name="bar-chart-outline" class="skill-icon"></ion-icon>
+              <h3 class="skill-name">Analytics & Data Analysis</h3>
+              <p class="skill-description">Collecting, processing, and performing statistical analysis on data to derive actionable insights.</p>
+            </div>
+            <div class="skill-item">
+              <ion-icon name="terminal-outline" class="skill-icon"></ion-icon>
+              <h3 class="skill-name">Object-Oriented Programming (OOP)</h3>
+              <p class="skill-description">Applying OOP principles to build scalable, maintainable, and robust software systems.</p>
+            </div>
+            <div class="skill-item">
+              <ion-icon name="server-outline" class="skill-icon"></ion-icon>
+              <h3 class="skill-name">Database Management (DBMS & SQL)</h3>
+              <p class="skill-description">Proficient in designing, implementing, and managing databases with SQL for efficient data storage and retrieval.</p>
+            </div>
+            <div class="skill-item">
+              <ion-icon name="sync-outline" class="skill-icon"></ion-icon>
+              <h3 class="skill-name">Operating Systems</h3>
+              <p class="skill-description">Fundamental understanding of operating system concepts, processes, and memory management.</p>
+            </div>
+             <div class="skill-item">
+              <ion-icon name="pulse-outline" class="skill-icon"></ion-icon>
+              <h3 class="skill-name">Signal Processing</h3>
+              <p class="skill-description">Expertise in analyzing, modifying, and synthesizing signals for various applications.</p>
+            </div>
+             <div class="skill-item">
+              <ion-icon name="layers-outline" class="skill-icon"></ion-icon>
+              <h3 class="skill-name">Sensor Fusion</h3>
+              <p class="skill-description">Integrating data from multiple sensors to achieve more accurate and reliable environmental understanding.</p>
+            </div>
+             <div class="skill-item">
+              <ion-icon name="walk-outline" class="skill-icon"></ion-icon>
+              <h3 class="skill-name">Human Computer Interaction</h3>
+              <p class="skill-description">Designing user interfaces with a focus on usability, accessibility, and intuitive interaction.</p>
+            </div>
+             <div class="skill-item">
+              <ion-icon name="aperture-outline" class="skill-icon"></ion-icon>
+              <h3 class="skill-name">OpenCV</h3>
+              <p class="skill-description">Hands-on experience with OpenCV for various computer vision tasks and image processing.</p>
+            </div>
+            <div class="skill-item">
+              <ion-icon name="logo-windows" class="skill-icon"></ion-icon> <!-- Using Windows logo as a generic VS Code placeholder -->
+              <h3 class="skill-name">Microsoft Visual Studio Code</h3>
+              <p class="skill-description">Proficient in using VS Code for efficient code development and debugging across multiple languages.</p>
+            </div>
+            <div class="skill-item">
+              <ion-icon name="logo-android" class="skill-icon"></ion-icon>
+              <h3 class="skill-name">Android Studio</h3>
+              <p class="skill-description">Experience developing Android applications using Android Studio, focusing on UI/UX and performance.</p>
+            </div>
+             <div class="skill-item">
+              <ion-icon name="code-outline" class="skill-icon"></ion-icon>
+              <h3 class="skill-name">Software Development</h3>
+              <p class="skill-description">Full lifecycle software development, from concept to deployment, ensuring robust and scalable solutions.</p>
+            </div>
+             <div class="skill-item">
+              <ion-icon name="bug-outline" class="skill-icon"></ion-icon>
+              <h3 class="skill-name">Problem Solving</h3>
+              <p class="skill-description">A strong analytical and logical approach to identify, diagnose, and resolve complex technical challenges effectively.</p>
+            </div>
+            <div class="skill-item">
+              <ion-icon name="git-branch-outline" class="skill-icon"></ion-icon>
+              <h3 class="skill-name">Version Control (Git)</h3>
+              <p class="skill-description">Proficient in Git for collaborative development, code management, and project versioning.</p>
+            </div>
+            <div class="skill-item">
+              <ion-icon name="browsers-outline" class="skill-icon"></ion-icon>
+              <h3 class="skill-name">Web Development</h3>
+              <p class="skill-description">Building responsive, user-friendly, and performant web applications using modern technologies like Bootstrap.</p>
+            </div>
+          </div>
+        </div>
+      </section>
 
-          <h2 class="h2 section-title">Volunteer</h2>
+      <section class="section portfolio" id="portfolio" aria-label="Portfolio">
+        <div class="container">
+          <h2 class="section-title text-center">My Recent Projects</h2>
+          <p class="section-description text-center">
+            Here are some of the projects I've recently worked on, showcasing my skills in web and app development, machine learning, and computer vision. Each project reflects my commitment to clean code, user-centric design, and functional solutions.
+          </p>
 
-          <ul class="blog-list">
-
-            <li>
-              <div class="blog-card">
-
-                <figure class="card-banner img-holder" style="--width: 700; --height: 470;">
-                  <img src="./assets/images/blog-1.jpg" width="700" height="470" loading="lazy"
-                    alt="Soft skills certificate by Wabstalk" class="img-cover">
-                </figure>
-
+          <div class="portfolio-list">
+            <div class="portfolio-card">
+              <div class="card-banner">
+                <img src="https://placehold.co/600x450/1DB954/FFFFFF?text=VigilEye" width="600" height="450" alt="VigilEye: Real-Time Drowsiness Detection" class="img-cover">
                 <div class="card-content">
-
-                  <time class="time" datetime="2022-06-24">
-                    <span class="span text-lg">24</span>
-                    May 2022
-                  </time>
-
-                  <div>
-                    <h3 class="h3 card-title">Soft skills certificate by Wabstalk.</h3>
-
-                    <p class="card-text">
-                      The Soft Skills Certificate program offered by Wabstalk has been a transformative experience in my personal and professional development journey. This meticulously designed program provided me with an invaluable opportunity to refine and enhance essential soft skills that are crucial for success in today's dynamic world.
-                    </p>
-                  </div>
-
+                  <h3 class="card-title">VigilEye: Real-Time Drowsiness Detection</h3>
+                  <p class="card-category">Computer Vision & ML</p>
+                  <p class="project-description">VigilEye is a cutting-edge system designed to prevent accidents by detecting driver drowsiness in real-time. Using advanced computer vision and machine learning, it monitors facial expressions and eye movements, issuing alerts to ensure driver alertness.
+                    <br><br>
+                    Skills: Computer Vision, Signal Processing, Human Computer Interaction, Machine Learning, Deep Learning, OpenCV, Python
+                  </p>
                 </div>
-
               </div>
-            </li>
-
-            <li>
-              <div class="blog-card">
-
-                <figure class="card-banner img-holder" style="--width: 700; --height: 470;">
-                  <img src="./assets/images/blog-2.jpg" width="700" height="470" loading="lazy"
-                    alt="Hindustan Olympiad" class="img-cover">
-                </figure>
-
+            </div>
+            <div class="portfolio-card">
+              <div class="card-banner">
+                <img src="https://placehold.co/600x450/1ED760/FFFFFF?text=SafeWalk" width="600" height="450" alt="SafeWalk: Pedestrian Detection and Warning System" class="img-cover">
                 <div class="card-content">
-
-                  <time class="time" datetime="2017-06-27">
-                    <span class="span text-lg">27</span>
-                    June 2017
-                  </time>
-
-                  <div>
-                    <h3 class="h3 card-title">Hindustan Olympiad</h3>
-
-                    <p class="card-text">
-                      Participating in the Hindustan Olympiad held in Bijnor, India, was an enriching experience that added a valuable dimension to my academic journey. Among a pool of talented participants, I proudly achieved the commendable rank of 601 in the Hindustan Olympiad.
-
-The event, hosted in the vibrant city of Bijnor, brought together young minds from diverse backgrounds to test their knowledge and problem-solving skills in subjects ranging from Mathematics and Science to English and General Knowledge. Competing on this platform not only challenged me intellectually but also encouraged me to push the boundaries of my understanding.
-                    </p>
-                  </div>
-
+                  <h3 class="card-title">SafeWalk: Pedestrian Detection and Warning System</h3>
+                  <p class="card-category">Embedded Systems & CV</p>
+                  <p class="project-description">SafeWalk is an innovative pedestrian safety solution designed to detect and alert drivers to the presence of pedestrians near roadways, significantly reducing the risk of accidents.
+                    <br><br>
+                    Skills: Embedded Systems, Sensor Fusion, Data Collection, Machine Learning, Computer Vision
+                  </p>
                 </div>
-
               </div>
-            </li>
+            </div>
+            <div class="portfolio-card">
+              <div class="card-banner">
+                <img src="https://placehold.co/600x450/2EEB7E/FFFFFF?text=GenderGuess" width="600" height="450" alt="GenderGuess" class="img-cover">
+                <div class="card-content">
+                  <h3 class="card-title">GenderGuess</h3>
+                  <p class="card-category">Web Development</p>
+                  <p class="project-description">Developed an interactive Gender Guess project for accurate gender prediction based on names, by integrating an API. The application predicts gender based on names and also provides corresponding probabilities.
+                    <br><br>
+                    Tech: Html, CSS, Javascript, API
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="portfolio-card">
+              <div class="card-banner">
+                <img src="https://placehold.co/600x450/1DB954/FFFFFF?text=TypeMaster" width="600" height="450" alt="TypeMaster: A TypingTest App" class="img-cover">
+                <div class="card-content">
+                  <h3 class="card-title">TypeMaster: A TypingTest App</h3>
+                  <p class="card-category">Web Development</p>
+                  <p class="project-description">Developed a dynamic Typing Test web application enriched with an API integration for accurate text generation. Users can refine their typing skills in real time, receiving instant results and performance insights.
+                    <br><br>
+                    Tech: Html, CSS, Javascript, API.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="portfolio-card">
+              <div class="card-banner">
+                <img src="https://placehold.co/600x450/1ED760/FFFFFF?text=WeatherWise" width="600" height="450" alt="WeatherWise: A Weather App" class="img-cover">
+                <div class="card-content">
+                  <h3 class="card-title">WeatherWise: A Weather App</h3>
+                  <p class="card-category">Web Development</p>
+                  <p class="project-description">Developed a real-time Basic Weather App using HTML, CSS, and JavaScript. Displayed essential weather info: temperature, conditions, humidity, wind speed, and icon. Implemented dynamic background changes based on the weather conditions to enhance the visual experience.
+                    <br><br>
+                    Skills: HTML, CSS, JavaScript
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
 
-          </ul>
+      <section class="section experience" id="experience" aria-label="Experience & Education">
+        <div class="container">
+          <h2 class="section-title text-center">My Journey & Education</h2>
+          <p class="section-description text-center">
+            My academic and professional path has equipped me with diverse skills and practical experience in software development and engineering.
+          </p>
 
+          <div class="experience-education-wrapper">
+            <div class="experience-section">
+              <h3 class="section-subtitle">Experience</h3>
+              <div class="experience-list">
+                <div class="experience-card">
+                  <div class="experience-header">
+                    <h4 class="experience-title">Soft skills certificate by Wabstalk</h4>
+                    <span class="experience-duration">24 May 2022</span>
+                  </div>
+                  <p class="experience-company">Wabstalk</p>
+                  <ul class="experience-description">
+                    <li>The Soft Skills Certificate program offered by Wabstalk has been a transformative experience in my personal and professional development journey.</li>
+                    <li>This meticulously designed program provided me with an invaluable opportunity to refine and enhance essential soft skills that are crucial for success in today's dynamic world.</li>
+
+                  </ul>
+                </div>
+                <div class="experience-card">
+                  <div class="experience-header">
+                    <h4 class="experience-title">Hindustan Olympiad</h4>
+                    <span class="experience-duration">27 June 2017</span>
+                  </div>
+                  <ul class="experience-description">
+                    <li>Participating in the Hindustan Olympiad held in Bijnor, India, was an enriching experience that added a valuable dimension to my academic journey. Among a pool of talented participants, I proudly achieved the commendable rank of 601 in the Hindustan Olympiad.</li>
+                    <li>The event, hosted in the vibrant city of Bijnor, brought together young minds from diverse backgrounds to test their knowledge and problem-solving skills in subjects ranging from Mathematics and Science to English and General Knowledge. Competing on this platform not only challenged me intellectually but also encouraged me to push the boundaries of my understanding.</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <div class="education-section">
+              <h3 class="section-subtitle">Education</h3>
+              <div class="education-list">
+                 <div class="education-card">
+                  <div class="education-header">
+                    <h4 class="education-title">Master of Technology - MTech, Electronics and Communications Engineering</h4>
+                    <span class="education-duration">Jul 2024 - May 2026</span>
+                  </div>
+                  <p class="education-institution">Indian Institute of Technology, Kharagpur</p>
+                  <p class="education-description">
+                    Currently pursuing a Master of Technology degree, specializing in advanced concepts in Electronics and Communication Engineering with a focus on Machine Learning and Computer Vision.
+                  </p>
+                  <p class="education-description">
+                    Skills: Embedded Systems · Machine Learning · Deep Learning · Computer Vision
+                  </p>
+                </div>
+                <div class="education-card">
+                  <div class="education-header">
+                    <h4 class="education-title">Bachelor of Technology - BTech, Electronics and Communications Engineering</h4>
+                    <span class="education-duration">2020 - 2024</span>
+                  </div>
+                  <p class="education-institution">National Institute of Technology Hamirpur</p>
+                  <p class="education-description">
+                    Completed Bachelor of Technology, building a strong foundation in Electronics and Communication Engineering principles.
+                  </p>
+                </div>
+                <div class="education-card">
+                  <div class="education-header">
+                    <h4 class="education-title">12th Grade</h4>
+                    <span class="education-duration">2018 - 2020</span>
+                  </div>
+                  <p class="education-institution">Roots International School Noorpur</p>
+                  <p class="education-description">
+                    Completed higher secondary education with a grade of 97%.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
 
     </article>
   </main>
 
-
-
-
-
-  <!-- 
-    - #FOOTER
-  -->
-
-  <footer class="footer">
+  <footer class="footer" id="contact">
     <div class="container">
+      <div class="footer-col">
+        <h4 class="footer-title">Get in touch</h4>
+        <a href="mailto:vivekchauhan73026@gmail.com" class="footer-link">vivekchauhan73026@gmail.com</a>
+      </div>
 
-      <ul class="footer-list">
+      <div class="footer-col">
+        <h4 class="footer-title">Location</h4>
+        <p class="footer-text">Bijnor, Uttar Pradesh, India</p>
+      </div>
 
-        <li>
-          <p class="h4 footer-list-title">Get in touch</p>
-        </li>
-
-        <li>
-          <a href="mailto:vivekchauhan73026@gmail.com" class="footer-link">vivekchauhan73026@gmail.com</a>
-        </li>
-
-      </ul>
-
-      <ul class="footer-list">
-
-        <li>
-          <p class="h4 footer-list-title">Locations</p>
-        </li>
-
-        <li>
-          <a href="#" class="footer-link">Bijnor — India</a>
-        </li>
-
-      </ul>
-
-      <ul class="social-list">
-
-        <li>
-          <a href="https:\\github.com/vivekchhn" class="social-link">
-            <ion-icon name="logo-github"></ion-icon>
-          </a>
-        </li>
-
-
-        <li>
-          <a href="https:\\linkedin.com/in/vivek-chauhan-010510200" class="social-link">
-            <ion-icon name="logo-linkedin"></ion-icon>
-          </a>
-        </li>
-
-      </ul>
-
+      <div class="footer-col social-col">
+        <h4 class="footer-title">Connect</h4>
+        <ul class="social-list">
+          <li>
+            <a href="https://github.com/vivekchhn" class="social-link" aria-label="GitHub" target="_blank" rel="noopener noreferrer">
+              <ion-icon name="logo-github"></ion-icon>
+            </a>
+          </li>
+          <li>
+            <a href="https://linkedin.com/in/vivek-chauhan-010510200" class="social-link" aria-label="LinkedIn" target="_blank" rel="noopener noreferrer">
+              <ion-icon name="logo-linkedin"></ion-icon>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom text-center">
+      <p>&copy; 2025 Vivek Chauhan. All rights reserved.</p>
     </div>
   </footer>
 
+  <a href="#home" class="back-to-top" data-back-to-top>
+    <ion-icon name="arrow-up-outline"></ion-icon>
+  </a>
 
+  <nav class="bottom-navbar">
+      <a href="#home" class="bottom-navbar-item active">
+          <ion-icon name="home-outline"></ion-icon>
+          <span>Home</span>
+      </a>
+      <a href="#languages" class="bottom-navbar-item">
+          <ion-icon name="code-slash-outline"></ion-icon>
+          <span>Languages</span>
+      </a>
+      <a href="#skills" class="bottom-navbar-item">
+          <ion-icon name="build-outline"></ion-icon>
+          <span>Skills</span>
+      </a>
+      <a href="#contact" class="bottom-navbar-item" data-nav-toggler>
+          <ion-icon name="ellipsis-horizontal-outline"></ion-icon>
+          <span>More</span>
+      </a>
+  </nav>
 
-
-
-  <!-- 
-    - custom js link
-  -->
-  <script src="./assets/js/script.js"></script>
-
-  <!-- 
-    - ionicon link
-  -->
   <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
   <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+  <script src="./assets/js/script.js"></script>
 
 </body>
 
